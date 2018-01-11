@@ -63,12 +63,14 @@ p {
 .skill {
   padding: 2px;
   width: fit-content;
+  padding-left: 10px;
 }
 
 .skill-category {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
+  line-height: 1.4rem;
 }
 
 .content {
@@ -80,10 +82,21 @@ p {
 .contact-links {
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
+  line-height: 1.4rem;
 }
 
 .project {
   padding-left: 20px;
+}
+
+.arrow {
+  height: 0;
+  width: 0;
+  border-top: .6rem solid transparent;
+  border-bottom: .6rem solid transparent;
+  border-left: 1.2rem solid black;
+  padding-right: 10px;
 }
 
 @media (max-width: 800px) {
@@ -156,5 +169,6 @@ p {
   .nav {
     display: flex;
     justify-content: space-around;
+    padding: 10px;
   }
 }

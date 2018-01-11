@@ -5,6 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script>
+  $(document).on('click', 'a[href^="#"]', function(e) {
+      var id = $(this).attr('href');
+      var $id = $(id);
+      if ($id.length === 0) {
+          return;
+      }
+      e.preventDefault();
+      var pos = $id.offset().top - 35;
+      $('body, html').animate({scrollTop: pos});
+  });
+  </script>
 </head>
 
 <body>
@@ -13,8 +26,8 @@
       <h1> Alirie Gray </h1>
       <img class="profile" src="circle_self.gif" height="150" width="150" >
     </div>
-    <div class="links">
-      <a href="#about" style="padding:10px"> About </a>
+    <div class="links" id="nav-links">
+      <a id="test" href="#about" style="padding:10px"> About </a>
       <a href="#projects" style="padding:10px"> Projects </a>
       <a href="#skills" style="padding:10px"> Skills </a>
       <a href="#contact" style="padding:10px"> Contact </a>
@@ -33,23 +46,23 @@
       <h1> Projects </h1>
       <div class="project">
         <h2> HTTP Flashcard Website </h2>
-        <h3> A website to help developers memorize the HTTP status codes </h3>
         <p> JavaScript, Node, Express, MongoDB, Handlebars </p>
+        <p> A flashcard website to help web developer students memorize the most commonly used HTTP status codes. The user is shown an HTTP status code (e.g., 404, 200, etc.) and given four options to select the correct corresponding meaning from. If the user is logged in, every correct answer will be stored on their account as a point. </p>
       </div>
       <div class="project">
         <h2> Marxist Clickbait Generator </h2>
-        <h3> Uses a second-order Markov chain to generate Marxist Buzzfeed-style article titles </h3>
         <p> Flask, Python </p>
+        <p> A website that uses a second-order Markov chain to generate Marxist Buzzfeed-style article titles. </p>
       </div>
       <div class="project">
         <h2> Activize Mobile App</h2>
-        <h3> Description </h3>
         <p> React Native, Google Maps </p>
+        <p> A cross-platform mobile app to help activists organize safely and efficiently. The main feature is a live updating map with a Waze-esque method of alerting local activists to points of interest and hazards. This will allow organizers to communicate the location of a police blockade to everyone at a rally within seconds, for street medics to keep participants updated with the location of first aid stations, or to help people navigate to the water fountains and public bathrooms at large events.  </p>
       </div>
       <div class="project">
         <h2> Nucleus </h2>
-        <h3> An education element generator game </h3>
         <p> JavaScript, Node, Express, Handlebars </p>
+        <p> An education element generator game that teaches the user how all the elements in the universe came about, starting from just hydrogen. As the user fuses elements together, simulating the fusion process that happens in the cores of stars, their personal periodic table attached to their account is filled out.  </p>
       </div>
     </div>
 
@@ -57,42 +70,93 @@
       <h1 style="margin-bottom:0px"> Skills </h1>
       <div class="skill-category">
         <h2> Languages </h2>
-        <span class="skill"> JavaScript </span>
-        <span class="skill"> Python </span>
-        <span class="skill"> C# </span>
-        <span class="skill"> Java </span>
+        <div style="display:flex;flex-direction:row;align-items:center;">
+          <img src="right-arrow.png" height="20" width="25">
+          <span class="skill"> JavaScript </span>
+        </div>
+        <div style="display:flex;flex-direction:row;align-items:center;">
+          <img src="right-arrow.png" height="20" width="25">
+          <span class="skill"> Python </span>
+        </div>
+        <div style="display:flex;flex-direction:row;align-items:center;">
+          <img src="right-arrow.png" height="20" width="25">
+          <span class="skill"> C# </span>
+        </div>
+        <div style="display:flex;flex-direction:row;align-items:center;">
+          <img src="right-arrow.png" height="20" width="25">
+          <span class="skill"> Java </span>
+        </div>
       </div>
       <div class="skill-category">
         <h2> Front-End </h2>
-        <span class="skill"> HTML/CSS </span>
-        <span class="skill"> React and React Native </span>
-        <span class="skill"> React Router </span>
-        <span class="skill"> Redux </span>
-        <span class="skill"> Handlebars </span>
+        <div style="display:flex;flex-direction:row;align-items:center;">
+          <img src="right-arrow.png" height="20" width="25">
+          <span class="skill"> HTML/CSS </span>
+        </div>
+        <div style="display:flex;flex-direction:row;align-items:center;">
+          <img src="right-arrow.png" height="20" width="25">
+          <span class="skill">  React and React Native </span>
+        </div>
+        <div style="display:flex;flex-direction:row;align-items:center;">
+          <img src="right-arrow.png" height="20" width="25">
+          <span class="skill">  React Router </span>
+        </div>
+        <div style="display:flex;flex-direction:row;align-items:center;">
+          <img src="right-arrow.png" height="20" width="25">
+          <span class="skill">  Redux </span>
+        </div>
+        <div style="display:flex;flex-direction:row;align-items:center;">
+          <img src="right-arrow.png" height="20" width="25">
+          <span class="skill">  Handlebars </span>
+        </div>
       </div>
       <div class="skill-category">
         <h2> Back-End </h2>
-        <span class="skill"> Node </span>
-        <span class="skill"> Express </span>
-        <span class="skill"> Flask </span>
-        <span class="skill"> MongoDB, Mongoose </span>
-        <span class="skill"> Sequelize </span>
+        <div style="display:flex;flex-direction:row;align-items:center;">
+          <img src="right-arrow.png" height="20" width="25">
+          <span class="skill">  Node </span>
+        </div>
+        <div style="display:flex;flex-direction:row;align-items:center;">
+          <img src="right-arrow.png" height="20" width="25">
+          <span class="skill">  Express </span>
+        </div>
+        <div style="display:flex;flex-direction:row;align-items:center;">
+          <img src="right-arrow.png" height="20" width="25">
+          <span class="skill">  Flask </span>
+        </div>
+        <div style="display:flex;flex-direction:row;align-items:center;">
+          <img src="right-arrow.png" height="20" width="25">
+          <span class="skill">  MongoDB and Mongoose </span>
+        </div>
+        <div style="display:flex;flex-direction:row;align-items:center;">
+          <img src="right-arrow.png" height="20" width="25">
+          <span class="skill">  Sequelize </span>
+        </div>
       </div>
       <div class="skill-category">
         <h2> Other </h2>
-        <span class="skill"> Leadership </span>
-        <span class="skill"> Communication and collaboration </span>
-        <span class="skill"> Writing clean, well-documented code </span>
+        <div style="display:flex;flex-direction:row;align-items:center;">
+          <img src="right-arrow.png" height="20" width="25">
+          <span class="skill">  Leadership </span>
+        </div>
+        <div style="display:flex;flex-direction:row;align-items:center;">
+          <img src="right-arrow.png" height="20" width="25">
+          <span class="skill">  Communication and collaboration </span>
+        </div>
+        <div style="display:flex;flex-direction:row;align-items:center;">
+          <img src="right-arrow.png" height="20" width="25">
+          <span class="skill">   Writing clean, well-documented code </span>
+        </div>
       </div>
     </div>
 
     <div class="contact" id="contact">
       <h1> Contact Me! </h1>
       <div class="contact-links">
-        <a href="https://www.linkedin.com/in/alirie-gray/"> LinkedIn </a>
-        <a href="https://github.com/Catislin"> GitHub </a>
-        <a href="https://codepen.io/alirie/"> CodePen </a>
-        alirie.gray@gmail.com
+        <span> LinkedIn: <a href="https://www.linkedin.com/in/alirie-gray/"> alirie-gray </a> </span>
+        <span> GitHub: <a href="https://github.com/Catislin">    catislin </a> </span>
+        <span> CodePen: <a href="https://codepen.io/alirie/"> alirie </a> </span>
+        <span> Email: alirie.gray@gmail.com </span>
       </div>
     </div>
   </div>
