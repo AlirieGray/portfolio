@@ -14,7 +14,7 @@
           return;
       }
       e.preventDefault();
-      var pos = $id.offset().top - 35;
+      var pos = $id.offset().top - 22;
       $('body, html').animate({scrollTop: pos});
   });
   </script>
@@ -45,24 +45,54 @@
     <div class="projects" id="projects">
       <h1> Projects </h1>
       <div class="project">
-        <h2> HTTP Flashcard Website </h2>
-        <p> JavaScript, Node, Express, MongoDB, Handlebars </p>
-        <p> A flashcard website to help web developer students memorize the most commonly used HTTP status codes. The user is shown an HTTP status code (e.g., 404, 200, etc.) and given four options to select the correct corresponding meaning from. If the user is logged in, every correct answer will be stored on their account as a point. </p>
+        <a href="https://learn-http.herokuapp.com/">
+          <h2> HTTP Flashcard Website </h2>
+          <p> A flashcard website to help web developer students memorize the most commonly used HTTP status codes. </p>
+        </a>
+        <p> The user is shown an HTTP status code (e.g., 404, 200, etc.) and given four options to select the correct corresponding meaning from. If the user is logged in, every correct answer will be stored on their account as a point. </p>
+        <p> Technologies used: </p>
+        <span class="tech"> JavaScript </span>
+        <span class="tech"> Node </span>
+        <span class="tech"> Express </span>
+        <span class="tech"> MongoDB </span>
+        <span class="tech"> Handlebars </span>
+        <img src="learn-http.png" height="60%" width="90%" style="margin-top:20px;">
       </div>
       <div class="project">
-        <h2> Marxist Clickbait Generator </h2>
-        <p> Flask, Python </p>
-        <p> A website that uses a second-order Markov chain to generate Marxist Buzzfeed-style article titles. </p>
+        <a href="">
+          <h2> Marxist Clickbait Generator </h2>
+          <p> A website that uses a second-order Markov chain to generate Marxist Buzzfeed-style article titles. </p>
+        </a>
+        <p> The user can click the "generate" button to create a new article title, and can save their favorites. The favorites are currently stored in a SQL database. My next step is to connect the website to the Twitter API, so that the user can Tweet their favorite generated titles! </p>
+        <p> Technologies used: </p>
+        <span class="tech"> Python </span>
+        <span class="tech"> Flask </span>
+        <span class="tech"> SQLAlchemy </span>
       </div>
       <div class="project">
-        <h2> Activize Mobile App</h2>
-        <p> React Native, Google Maps </p>
-        <p> A cross-platform mobile app to help activists organize safely and efficiently. The main feature is a live updating map with a Waze-esque method of alerting local activists to points of interest and hazards. This will allow organizers to communicate the location of a police blockade to everyone at a rally within seconds, for street medics to keep participants updated with the location of first aid stations, or to help people navigate to the water fountains and public bathrooms at large events.  </p>
+        <a href="https://github.com/Catislin/Activize-Mobile">
+          <h2> Activize Mobile App</h2>
+          <p> A cross-platform mobile app to help activists organize safely and efficiently. </p>
+        </a>
+        <p> The main feature is a live updating map with a Waze-esque method of alerting local activists to points of interest and hazards. This will allow organizers to communicate the location of a police blockade to everyone at a rally within seconds, for street medics to keep participants updated with the location of first aid stations, or to help people navigate to the water fountains and public bathrooms at large events.  </p>
+        <p> Technologies used: </p>
+        <span class="tech"> React Native </span>
+        <span class="tech"> Redux </span>
+        <span class="tech"> Google Maps API </span>
+        <img src="activize.png" height="50%" width="50%" style="margin-top:20px;">
       </div>
       <div class="project">
-        <h2> Nucleus </h2>
-        <p> JavaScript, Node, Express, Handlebars </p>
-        <p> An education element generator game that teaches the user how all the elements in the universe came about, starting from just hydrogen. As the user fuses elements together, simulating the fusion process that happens in the cores of stars, their personal periodic table attached to their account is filled out.  </p>
+        <a href="elementgenerator.herokuapp.com">
+          <h2> Nucleus </h2>
+          <p> An educational element generator web game. </p>
+        </a>
+        <p> This game teaches the user how all the elements in the universe came about, starting from just hydrogen. As the user fuses elements together, simulating the fusion process that happens in the cores of stars, their personal periodic table attached to their account is filled out.  </p>
+        <p> Technologies used: </p>
+        <span class="tech"> JavaScript </span>
+        <span class="tech"> Node </span>
+        <span class="tech"> Express </span>
+        <span class="tech"> Handlebars </span>
+        <img src="nucleus.png" height="70%" width="70%" style="margin-top:20px;">
       </div>
     </div>
 

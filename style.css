@@ -3,11 +3,11 @@ body {
   grid-template-columns: 30vw auto;
   margin: 0;
   font-family: Tahoma, sans-serif;
-  background-color: #f4f1fa;
+  background-color: rgba(237,232,234,.05);
 }
 
 .nav {
-  background: rgb(149, 117, 205);
+  background: #ad1457;
   display: flex;
   width: 30vw;
   flex-direction: column;
@@ -27,11 +27,6 @@ p {
 .nav h1 {
   color: white
 }
-
-.content h1 {
-  color: #4a3a66;
-}
-
 .profile {
   margin-bottom: 30px;
 }
@@ -39,7 +34,7 @@ p {
 .links {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: right;
   font-size: 1.5rem;
 }
 
@@ -88,15 +83,25 @@ p {
 
 .project {
   padding-left: 20px;
+  padding-bottom: 20px;
 }
 
-.arrow {
-  height: 0;
-  width: 0;
-  border-top: .6rem solid transparent;
-  border-bottom: .6rem solid transparent;
-  border-left: 1.2rem solid black;
-  padding-right: 10px;
+.project > a {
+  text-decoration: none;
+  color: black;
+}
+
+.project > a:hover {
+  color: #ad1457;
+}
+
+.tech {
+    background-color: #ad1457;
+    padding: 5px;
+    color: white;
+    margin: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 @media (max-width: 800px) {
