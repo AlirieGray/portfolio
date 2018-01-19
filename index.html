@@ -22,23 +22,31 @@
 
 <body>
   <div class="nav" id="nav">
-    <div class="nav-header">
-      <h1> Alirie Gray </h1>
-      <img class="profile" src="circle_self.gif" height="150" width="150" >
+    <div class="nav-content">
+      <div class="nav-header">
+        <h1> Alirie Gray </h1>
+        <img class="profile" src="circle_self.gif" height="150" width="150" >
+      </div>
+        <div class="links" id="nav-links">
+          <a id="test" href="#about" style="padding:10px"> About </a>
+          <a href="#projects" style="padding:10px"> Projects </a>
+          <a href="#skills" style="padding:10px"> Skills </a>
+          <a href="#contact" style="padding:10px"> Contact </a>
+        </div>
     </div>
-    <div class="links" id="nav-links">
-      <a id="test" href="#about" style="padding:10px"> About </a>
-      <a href="#projects" style="padding:10px"> Projects </a>
-      <a href="#skills" style="padding:10px"> Skills </a>
-      <a href="#contact" style="padding:10px"> Contact </a>
-    </div>
+      <div class="contact-icons">
+        <a href="mailto:alirie.gray@gmail.com"> <img src="little-envelope.png"> </a>
+        <a href="https://www.linkedin.com/in/alirie-gray/"> <img src="linked.png"> </a>
+        <a href="https://github.com/Catislin"> <img src="github-logo.png"> </a>
+        <a href="https://codepen.io/alirie/"> <img src="codepen.png"> </a>
+      </div>
   </div>
 
   <div class="content">
     <div class="about" id="about">
       <h1> About Me </h1>
       <p> I'm a software developer living in the San Francisco Bay Area. I like making websites and solving problems. I want to use code to move us towards a world in which all information is free and accessible. </p>
-      <p> I'm currently enrolled in a hands-on software engineering program called the <a href="https://www.makeschool.com/product-college"> Product College</a>, where I'm learning web frameworks, professional skills, data structures, and algorithms. My current passion project is a cross-platform app that uses React, Node, and Socket.io to sync a live updating map across multiple mobile and web clients. </p>
+      <p> I'm currently enrolled in a hands-on software engineering program called the Product College, where I'm learning web frameworks, professional skills, data structures, and algorithms. My current passion project is a cross-platform app that uses React, Node, and Socket.io to sync a live updating map across multiple mobile and web clients. </p>
       <p> When I'm not writing code, I enjoy rock climbing, playing Dungeons and Dragons, and experimenting with vegan cooking.</p>
     </div>
 
@@ -61,7 +69,7 @@
 
       </div>
       <div class="project">
-        <a href="">
+        <a href="http://marxist-clickbait.herokuapp.com/">
           <h2> Marxist Clickbait Generator </h2>
           <p> A website that uses a second-order Markov chain to generate Marxist Buzzfeed-style article titles. </p>
         </a>
@@ -86,7 +94,7 @@
 
       </div>
       <div class="project">
-        <a href="elementgenerator.herokuapp.com">
+        <a href="https://elementgenerator.herokuapp.com">
           <h2> Nucleus </h2>
           <p> An educational element generator web game. </p>
         </a>
@@ -190,9 +198,11 @@
       <h1> Contact Me </h1>
       <div class="contact-links">
         <span> LinkedIn: <a href="https://www.linkedin.com/in/alirie-gray/"> alirie-gray </a> </span>
-        <span> GitHub: <a href="https://github.com/Catislin">    catislin </a> </span>
+        <div>
+          GitHub: <a href="https://github.com/Catislin"> Catislin  </a> </div>
         <span> CodePen: <a href="https://codepen.io/alirie/"> alirie </a> </span>
-        <span> Email: alirie.gray@gmail.com </span>
+        <div>
+          Email:  alirie.gray@gmail.com </div>
       </div>
     </div>
   </div>
