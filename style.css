@@ -20,10 +20,11 @@ body {
   margin-top: 30px;
   display: flex;
   flex-direction: row;
+
 }
 
 .contact-icons > a {
-  margin: 5px;
+  margin: 10px;
 }
 
 .nav-header {
@@ -135,6 +136,7 @@ p {
   .nav {
     display: grid;
     height: 15vh;
+    min-height: 130px;
     min-width: 100vw;
     padding: 10px;
     padding-left: 30px;
@@ -153,7 +155,7 @@ p {
     display: flex;
     justify-content: flex-end;
     margin: 0px;
-    margin-right: 20px;
+    padding-right: 40px;
   }
   .contact-icons > a > img {
     width: 20px;
