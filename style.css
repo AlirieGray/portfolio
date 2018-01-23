@@ -127,7 +127,7 @@ p {
 
 }
 
-@media (max-width: 1000px) {
+@media all and (max-width: 1000px) {
   body {
     grid-template-columns: 1fr;
     grid-template-rows: 15vh auto;
@@ -137,6 +137,7 @@ p {
     height: 15vh;
     min-width: 100vw;
     padding: 10px;
+    padding-left: 30px;
     grid-template-rows: 2fr 1fr;
   }
   .nav-content {
@@ -201,7 +202,7 @@ p {
   }
 }
 
-@media (max-width: 700px) {
+@media all and (max-width: 700px) {
   .links {
     flex-direction: column;
     font-size: .9rem;
